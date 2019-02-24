@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>LOG IN | My Roommates</title>
+	<link rel="stylesheet" type="text/css" href="signindesign.css">
+</head>
+<body>
+	
+		
+	
+<div id=login_div" class="login-box">
+	<h1>Login</h1>
+	
+	<div class="textbox">
+		<i class="fa fa-user" aria-hidden="true"></i>
+		<input type="text" placeholder="Username" name=""value="" id="email_field">
+	</div>
+
+	<div class="textbox">
+		<i class="fa fa-lock" aria-hidden="true"></i>
+		<input  type="Password" placeholder="Password" name=""value="" id="password_field">
+	</div>
+
+<input onclick="login()"  class="btn" type="button" name="" value="Login">
+
+  
+</div>
+
+
+<div id="user-div" class="login-div">
+	   <div  >
+
+	       <h3  >WELCOME User!!!!!!</h3>
+	       <p>Welcome to firebase web login. you are currently log in</p>
+	       <button onclick="logout()"  >Logout</button>
+        </div>
+</div>
+
+
+
+<script src="https://www.gstatic.com/firebasejs/5.8.4/firebase.js"></script>
+<script>
+  // Initialize Firebase
+  var config = {
+    apiKey: "AIzaSyBH6m0FHx-l0ytGQUgpnv4hN2DRBOLBdPc",
+    authDomain: "my-roommates-95023.firebaseapp.com",
+    databaseURL: "https://my-roommates-95023.firebaseio.com",
+    projectId: "my-roommates-95023",
+    storageBucket: "my-roommates-95023.appspot.com",
+    messagingSenderId: "458533102959"
+  };
+  firebase.initializeApp(config);
+</script>
+<script src="signin.js"></script>
+</body>
+</html>
